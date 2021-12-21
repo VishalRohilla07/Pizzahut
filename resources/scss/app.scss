@@ -20,19 +20,44 @@ nav li a {
   }
 }
 
-section.hero{
-    background: $secondary;
+section.hero {
+  background: $secondary;
 }
-.size{
-    background: $secondary;
+.size {
+  background: $secondary;
 }
-.add-to-cart{
-    border: 2px solid $primary;
+.add-to-cart {
+  border: 2px solid $primary;
+  color: $primary;
+  transition: $smooth;
+  &:hover {
+    background: $primary;
+    border-color: $pure;
+    color: $pure;
+  }
+}
+
+.btn-primary {
+  background: $primary;
+  transition: $smooth;
+  &:hover {
+    background: $primary-hover;
+  }
+}
+
+section.cart{
+  background: $secondary;
+  .amount{
     color: $primary;
-    transition: $smooth;
+  }
+}
+section.login{
+  background: $secondary;
+  min-height: calc(100vh -86px);
+  a {
+    color: $primary;
     &:hover{
-        background: $primary;
-        border-color: $pure;
-        color: $pure;
+      color: $primary-hover;
     }
+  }
 }
